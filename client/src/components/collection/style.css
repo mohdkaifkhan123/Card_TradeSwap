@@ -1,0 +1,50 @@
+.buttonDiv {
+  max-width: 696px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.color-key {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.color-key-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.color-key-item:last-child {
+  margin-right: 0;
+}
+
+.color-key-item div:first-child {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.color-key-item div:last-child {
+  color: white;
+}
+
+.dont-own {
+  background-color: yellow;
+}
+
+.own {
+  background-color: lightyellow;
+}
+
+.cardViewDont-own {
+  background-color: gray;
+}
+
+.cardViewOwn {
+  background-color: white;
+}

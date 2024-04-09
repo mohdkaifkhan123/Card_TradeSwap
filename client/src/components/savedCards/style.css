@@ -1,0 +1,60 @@
+.card {
+  margin: 3rem;
+  min-width: 15rem;
+  max-width: 15rem;
+}
+
+.card:hover .card-img-top {
+  transition: 0.5s;
+  filter: brightness(50%);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.options img {
+  width: 2rem;
+}
+
+.card h5 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.2rem;
+}
+
+.card h6 {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 0.2rem;
+}
+
+.common {
+  color: grey;
+}
+
+.uncommon {
+  color: green;
+}
+
+.rare {
+  color: blue;
+}
+
+.legendary {
+  color: orange;
+}
+
+.options img:hover {
+  cursor: pointer;
+}
+
+.options #delete p {
+  color: red;
+}
+
+.options #trade p {
+  color: green;
+}

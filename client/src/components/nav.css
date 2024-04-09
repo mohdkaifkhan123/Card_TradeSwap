@@ -1,0 +1,39 @@
+* {
+  font-family: "Press Start 2P";
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #6c757d;
+  padding: 5px 0 10px 0;
+}
+h1 {
+  font-size: 64px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #6c757d;
+  padding: 5px 0 10px 0;
+}
+
+.nav a {
+  /* play with box shadow more */
+  font-weight: bolder;
+  border: #ffc600 2px solid;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 7.5px;
+  background-color: #fffc79;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px 5px black;
+  /* transition:.5s; */
+}
+
+.nav a:hover {
+  box-shadow: 2px 2px 2px 2px black;
+}

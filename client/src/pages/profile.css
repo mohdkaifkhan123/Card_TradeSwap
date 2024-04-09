@@ -1,0 +1,18 @@
+.container {
+  margin: 40px auto;
+}
+
+.color-explanation {
+  max-width: 696px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.inventoryBtn {
+}
+
+.inventoryContainer {
+  display: flex;
+  flex-direction: column;
+}

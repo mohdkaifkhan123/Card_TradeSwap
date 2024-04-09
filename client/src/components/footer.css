@@ -1,0 +1,32 @@
+.footerBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #6c757d;
+  min-height: 60px;
+  z-index: 10;
+}
+
+.footerBody a {
+  color: black;
+  text-decoration: none;
+}
+
+.footerBody p {
+  margin: 5px;
+}
+
+.footerBody p:hover {
+  color: #f95738;
+  cursor: pointer;
+}
+.footerBody a:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .footerBody {
+    flex-direction: column;
+  }
+}

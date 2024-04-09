@@ -1,0 +1,41 @@
+.parentContainer {
+  margin: 30px auto;
+}
+
+.container {
+  margin: 40px auto;
+}
+
+form {
+  display: flex;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+form select {
+  margin: 20px 0;
+  height: 40px;
+}
+
+form input {
+  margin: 20px 0;
+  height: 40px;
+}
+
+form label {
+  color: white;
+}
+
+option {
+  color: green;
+  padding-left: 20px;
+}
+
+/* .tradesContainer {
+  color: #f95738;
+  border: 2px solid #ffc600;
+  border-radius: 20px;
+  padding: 20px;
+} */

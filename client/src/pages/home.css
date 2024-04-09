@@ -1,0 +1,165 @@
+.container {
+  margin: 40px auto;
+}
+
+:root {
+  --primary: #f95738;
+}
+
+body {
+  background-color: #083d77;
+}
+h1 {
+  color: var(--primary);
+  text-align: center;
+  font-family: "Bungee";
+}
+
+h2 {
+  color: var(--primary);
+  text-align: center;
+  font-family: "Bungee";
+}
+
+.about {
+  color: #ffc600;
+  animation: aboutGlow 3s infinite;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 5px 15px 15px 15px;
+}
+
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  width: 200px;
+}
+
+.parent-container p {
+  background-color: white;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.openPackBtn {
+  position: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #f95738, 0 0 10px #f95738, 0 0 15px #f95738,
+      0 0 20px #f95738;
+  }
+  100% {
+    box-shadow: 0 0 10px #f95738, 0 0 20px #f95738, 0 0 30px #f95738,
+      0 0 40px #f95738;
+  }
+}
+
+@keyframes aboutGlow {
+  0% {
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000,
+      0 0 20px #ff0000;
+  }
+  50% {
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000,
+      0 0 40px #ff0000;
+  }
+  100% {
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000,
+      0 0 20px #ff0000;
+  }
+}
+
+@keyframes rareGlow {
+  0% {
+    box-shadow: 0 0 5px yellowgreen, 0 0 10px yellowgreen, 0 0 15px yellowgreen,
+      0 0 20px yellowgreen;
+  }
+  100% {
+    box-shadow: 0 0 10px yellowgreen, 0 0 20px yellowgreen, 0 0 30px yellowgreen,
+      0 0 40px yellowgreen;
+  }
+}
+
+.packImg {
+  z-index: 0;
+  margin: auto;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.rarePackImg {
+  z-index: 0;
+  margin: auto;
+  animation: rareGlow 2s ease-in-out infinite alternate;
+}
+
+.openPackBtn .btn {
+  z-index: 1;
+  position: relative;
+  top: -250px;
+  width: 100px;
+}
+
+.card {
+  margin: 3rem;
+  min-width: 15rem;
+  max-width: 15rem;
+}
+.card:hover .card-img-top {
+  transition: 0.5s;
+  filter: brightness(50%);
+}
+
+.openPackBtn button:hover {
+  color: #ffc600;
+  background-color: black;
+}
+
+.card h2 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.2rem;
+}
+
+.card h3 {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 0.2rem;
+}
+
+.common {
+  color: grey;
+}
+
+.uncommon {
+  color: green;
+}
+
+.rare {
+  color: blue;
+}
+
+.legendary {
+  color: orange;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin: 0.2rem;
+}
